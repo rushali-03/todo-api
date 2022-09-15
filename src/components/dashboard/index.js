@@ -8,15 +8,15 @@ import SendIcon from '@mui/icons-material/Send';
 import { Container } from '@mui/system';
 import List from '@mui/material/List';
 
-import useAuthToken from '../hooks/useAuthToken';
-import ListItemComponent from '../React/ListItemComponent';
-import ModeButtonGroup from '../React/ModeButtonGroup';
-import getAllTasks from './getAllTasks';
-import updateTask from './updateTask';
-import deleteTask from './deteleTask';
-import addTask from './addTask';
-import GetSubmitLoadingButton from '../React/GetSubmitLoadingButton';
-import '../App.css';
+import GetSubmitLoadingButton from '../sharedFolder/GetSubmitLoadingButton'
+import ListItemComponent from '../sharedFolder/ListItemComponent';
+import ModeButtonGroup from '../sharedFolder/ModeButtonGroup';
+import useAuthToken from '../../hooks/useAuthToken';
+import getAllTasks from '../api/getAllTasks';
+import updateTask from '../api/updateTask';
+import deleteTask from '../api/deteleTask';
+import addTask from '../api/addTask';
+import '../../App.css';
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -29,7 +29,6 @@ function Dashboard() {
   const [loadingActiveTasks, setLoadingActiveTasks] = useState(false);
   const [loadingCompletedTasks, setLoadingCompletedTasks] = useState(false);
   const [loadingLogout, setLoadingLogout] = useState(false);
-  const [disabled, setDisabled] = useState(false);
 
   useEffect(() => {
     if (!auth) {
@@ -99,7 +98,6 @@ function Dashboard() {
   }
 
   const handleOnLogout = () => {
-    setDisabled(current => !current);
     setLoadingLogout(current => !current);
     localStorage.clear();
     return navigate("../", { replace: true });

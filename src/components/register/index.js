@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Button from '@mui/material/Button';
 import { Container } from '@mui/system';
 import { Grid, Paper, Typography } from '@mui/material';
 
-import { setToken } from '../utils/helper';
-import verifyUser from './verifyUser';
-import GetSubmitLoadingButton from '../React/GetSubmitLoadingButton';
-import TextFieldGrid from '../React/TextFieldGrid';
-import TextFieldPasswordGrid from '../React/TextFieldPasswordGrid';
-import '../App.css';
+import { setToken } from '../../utils/helper';
+import verifyUser from '../api/verifyUser';
+import GetSubmitLoadingButton from '../sharedFolder/GetSubmitLoadingButton'
+import TextFieldGrid from '../sharedFolder/TextFieldGrid';
+import TextFieldPasswordGrid from '../sharedFolder/TextFieldPasswordGrid';
+import '../../App.css';
 
 export default function Register() {
   const navigate = useNavigate()

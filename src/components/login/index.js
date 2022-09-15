@@ -4,13 +4,13 @@ import Button from '@mui/material/Button';
 import { Container } from '@mui/system';
 import { Grid, Paper, Typography } from '@mui/material';
 
-import GetSubmitLoadingButton from '../React/GetSubmitLoadingButton';
-import TextFieldGrid from '../React/TextFieldGrid';
-import TextFieldPasswordGrid from '../React/TextFieldPasswordGrid';
-import { setToken } from '../utils/helper';
-import useAuthToken from '../hooks/useAuthToken';
-import verifyUser from './verifyUser';
-import '../App.css';
+import GetSubmitLoadingButton from '../sharedFolder/GetSubmitLoadingButton';
+import TextFieldGrid from '../sharedFolder/TextFieldGrid';
+import TextFieldPasswordGrid from '../sharedFolder/TextFieldPasswordGrid';
+import { setToken } from '../../utils/helper';
+import useAuthToken from '../../hooks/useAuthToken';
+import verifyUser from '../api/verifyUser';
+import '../../App.css';
 
 export default function Login() {
   const navigate = useNavigate();

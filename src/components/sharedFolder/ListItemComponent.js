@@ -7,7 +7,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { LoadingButton } from "@mui/lab";
 
-import '../App.css'
+import '../../App.css'
 
 function ListItemComponent(props) {
   const [disabledDelete, setDisabledDelete] = useState(false);
