@@ -4,12 +4,12 @@ import Button from '@mui/material/Button';
 import { Container } from '@mui/system';
 import { Grid, Paper, Typography } from '@mui/material';
 
-import GetSubmitLoadingButton from '../sharedFolder/GetSubmitLoadingButton';
-import TextFieldGrid from '../sharedFolder/TextFieldGrid';
-import TextFieldPasswordGrid from '../sharedFolder/TextFieldPasswordGrid';
+import GetSubmitLoadingButton from '../shared/GetSubmitLoadingButton';
+import TextFieldGrid from '../shared/TextFieldGrid';
+import TextFieldPasswordGrid from '../shared/TextFieldPasswordGrid';
 import { setToken } from '../../utils/helper';
 import useAuthToken from '../../hooks/useAuthToken';
-import verifyUser from '../api/verifyUser';
+import verifyUser from '../../api/verifyUser';
 import '../../App.css';
 
 export default function Login() {

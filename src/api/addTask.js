@@ -1,4 +1,4 @@
-import { getToken } from '../../utils/helper';
+import { getToken } from '../utils/helper';
 
 async function addTask(description) {
   const myHeaders = new Headers();

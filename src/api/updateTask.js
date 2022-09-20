@@ -1,4 +1,4 @@
-import { getToken } from '../../utils/helper';
+import { getToken } from '../utils/helper';
 
 async function updateTask(credentials, task) {
   const myHeaders = new Headers();

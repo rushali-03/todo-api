@@ -5,10 +5,10 @@ import { Container } from '@mui/system';
 import { Grid, Paper, Typography } from '@mui/material';
 
 import { setToken } from '../../utils/helper';
-import verifyUser from '../api/verifyUser';
-import GetSubmitLoadingButton from '../sharedFolder/GetSubmitLoadingButton'
-import TextFieldGrid from '../sharedFolder/TextFieldGrid';
-import TextFieldPasswordGrid from '../sharedFolder/TextFieldPasswordGrid';
+import verifyUser from '../../api/verifyUser';
+import GetSubmitLoadingButton from '../shared/GetSubmitLoadingButton'
+import TextFieldGrid from '../shared/TextFieldGrid';
+import TextFieldPasswordGrid from '../shared/TextFieldPasswordGrid';
 import '../../App.css';
 
 export default function Register() {
